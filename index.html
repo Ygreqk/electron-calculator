@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js"></script>
+    <link   rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="3"><input type="text" id="calc_result"/></td>
+            <td style="height: 15vh"><input class="nbutton1" type="button" value="C" onclick="clear1()"/></td>
+        </tr>
+        <tr>
+            <td><input class="nbutton" type="button" value="7" onclick="num_append(7)"/></td>
+            <td><input class="nbutton" type="button" value="8" onclick="num_append(8)"/></td>
+            <td><input class="nbutton" type="button" value="9" onclick="num_append(9)"/></td>
+            <td><input class="nbutton1" type="button" value="+" onclick="num_append('+')"/></td>
+        </tr>
+        <tr>
+            <td><input class="nbutton" type="button" value="4" onclick="num_append(4)"/></td>
+            <td><input class="nbutton" type="button" value="5" onclick="num_append(5)"/></td>
+            <td><input class="nbutton" type="button" value="6" onclick="num_append(6)"/></td>
+            <td><input class="nbutton1" type="button" value="-" onclick="num_append('-')"/></td>
+        </tr>
+        <tr>
+            <td><input class="nbutton" type="button" value="1" onclick="num_append(1)"/></td>
+            <td><input class="nbutton" type="button" value="2" onclick="num_append(2)"/></td>
+            <td><input class="nbutton" type="button" value="3" onclick="num_append(3)"/></td>
+            <td><input class="nbutton1" type="button" value="*" onclick="num_append('*')"/></td>
+        </tr>
+        <tr>
+            <td><input class="nbutton" type="button" value="." onclick="num_append('.')"/></td>
+            <td><input class="nbutton" type="button" value="0" onclick="num_append(0)"/></td>
+            <td><input class="nbutton" type="button" value="=" onclick="calc()"/></td>
+            <td><input class="nbutton1" type="button" value="/" onclick="num_append('/')"/></td>
+        </tr>
+    </table>
+</body>
+</html>
